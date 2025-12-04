@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="EN">
+    <head>
+        <title>Noah Lima Portifolio</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta property="og:url" content="https://noah-portifolio.web.app/">
+        <meta property="og:description" content="Projects of Noah Lima Developer. Click to know more about it">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <meta name="theme-color" content="#0D1117">
+        <link href="style.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+        <section class="topo">
+            <ul class="menu">
+                <li><a href="#contato">Contact</a></li>
+                <li><a href="#projetos">Projects</a></li>
+            </ul>
+            
+            <ul class="language">
+                <li><a href="index.html">PT</a></li>
+                <li><a href="indexEnglish.html">EN</a></li>
+            </ul>
+
+        </section>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+            var menuLinks = document.querySelectorAll(".menu a");
+      
+          menuLinks.forEach(function (link) {
+              link.addEventListener("click", function (e) {
+                  e.preventDefault(); 
+                  var targetId = this.getAttribute("href").substring(1); 
+      
+                  var targetElement = document.getElementById(targetId); 
+      
+                  if (targetElement) {
+                      window.scrollTo({
+                          top: targetElement.offsetTop,
+                          behavior: "smooth",
+                      });
+                  }
+              });
+          });
+      });
+      
+        </script>
+
+        <section class="Introdução">
+            <div class="titulo">
+                    <h2 lang="en">Hello! I am Noah <!-- <a target="_blank" href="https://www.canva.com/design/DAF1jCitFOg/_jFdeD550dK8Uc38kathvA/edit"><img width="48" height="48" src="https://img.icons8.com/color/48/literature--v1.png" alt="literature--v1"/></a> --> </h2>
+                    <h2 lang="en">Creator of websites! <a target="_blank" href="https://github.com/Solamento02"><img width="50" height="50" src="https://img.icons8.com/badges/50/github.png" alt="github"/></a></h2>
+
+                    <p lang="en">
+                        My name is Noah Lima and I am a developer specialized in creating Landing Pages. I understand that you don't just need a beautiful website, but an effective online showcase that converts visitors into customers. My work is about transforming your needs into a functional and objective business tool. Count on me!
+                    </p>
+
+                <!-- <div class="tecno">
+                    <h2 lang="en">Technologies</h2>
+                </div>    
+                    <p lang="en">
+                         Node.js | JavaScript | React.js | React Native
+                    </p> -->
+
+
+            </div>
+        </section>
+
+        <section class="Github">
+            <div id="projetos"></id>
+                <h2 lang="pt-BR">Projects I've done</h2>
+                <div class="projeto-container">
+                    <div class="projeto">
+                            <a target="_blank" href="https://oficina-aloo.web.app/">
+                            <img src="imagens/alo-mecanica.webp" width="350px" alt="Website Mechanical Workshop" title="Website Mechanical Workshop"></a>
+                    </div>
+
+                    <div class="projeto">
+                        <a target="_blank" href="https://jini-portifolio.vercel.app/">
+                        <img src="imagens/jini.webp" width="350px" alt="Website Portfolio Artist" title="Website Portifolio Artist" > </a>
+                    </div>
+
+                    <div class="projeto">
+                        <a target="_blank" href="https://clinica-espaco-mente-serena.vercel.app/">
+                            <img src="imagens/clinica-serena.webp" width="350px" alt="Clinical therapy" title="Website Clinical Therapy"> 
+                        </a>
+                    </div>
+
+                    <div class="projeto">
+                        <a target="_blank" href="https://eco-vida-organicos.vercel.app/">
+                            <img src="imagens/ecovida-organicos.webp" width="350px" alt="Website Organic Food" title="Website Organic Food">
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section class="contato">
+            <div id="contato"></id>
+                <h2 lang="en">Contact</h2>
+                <div class="bloco">
+                    <h1>Email <a target="_blank" href="mailto:noahlimadev@outlook.com">✉️</h1>
+                    <p>noahlimadev@outlook.com</p></a>
+                </div>
+        </section>
+
+    </body>
+</html>
